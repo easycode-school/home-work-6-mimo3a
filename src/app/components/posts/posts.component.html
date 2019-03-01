@@ -1,0 +1,21 @@
+<div class="container">
+  <table class="table table-light">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">body</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let post of postsArray">
+      <tr>
+        <th scope="row">{{ post.id }}</th>
+        <td>{{ post.title }}</td>
+        <td>{{ post.body }}</td>
+      </tr>
+      <tr>
+        <td><button>Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
